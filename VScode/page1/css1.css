@@ -1,15 +1,15 @@
 		
 body {
     font-family: 'Arimo', sans-serif;
-    background-color: bisque;
+    background-color: #F7F5E1;
     line-height: 1.5em;
     direction: rtl;
 
 }
 
 header {
-    background-color:#984a96;
-    color: rgb(56, 233, 233) ;				
+    background-color:#461473;
+    color: #4BE1BE ;				
     height: 100px;
     text-align: center;
     width: 50%;
@@ -24,7 +24,7 @@ header h2 {
     margin: 0;
     padding-top: 40px;
     text-align: left;
-    color: #984a96;
+    color: #461473;
     margin-left: 28%;
 }
 
@@ -48,7 +48,7 @@ aside{
      font-size: 20px;
      text-align:center;
      padding: 10px 30px;
-     background-color:#984a96;
+     background-color:#461473;
      color: white;
      margin-top: 2.5%;
      border-radius: 10px;
@@ -67,14 +67,10 @@ aside{
 
   }
 
-.active {
-    background-color: #4CAF50;
-    }
-
 footer {
     clear: left;
     width: 100%;
-    background-color: #984a96;
+    background-color: #461473;
     text-align: center;
     color:#d7dcf2;
 
@@ -93,17 +89,7 @@ color:	#d3d7f0;
     font-size: 50px;
 }
 
-p {
-    color: #555;
-}
 
-
-.logo {
-
-    height: 300px;
-    margin-top: 10px;
-
-}
 
 .main-img
 {
