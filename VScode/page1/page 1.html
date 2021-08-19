@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css1.css">
+    <script src="page1.js"></script>
     <title>page 1</title>
 </head>
 <body>
@@ -21,19 +22,23 @@
 
     <aside> 
         
-        <button><a href="#">ניהול תכנים</a></button><br> 
-        <button><a href="#">ניהול קורסים ושיעורים</a></button><br>
-        <button><a href="#">ניהול מדריכים</a></button><br> 
-        <button><a href="#">ניהול לקוחות</a></button><br>
-        <button><a href="#">דוחו"ת</a></button> 
-        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+          </div>
     </aside>
            
         <main>
             <img  class= "main-img "src="..\page1\img\page1.png">
         </main>
-            ADIS
-            test two
+               
     <footer>
         <div class="footer">
             <p>test</p>
