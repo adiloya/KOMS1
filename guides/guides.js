@@ -9,10 +9,16 @@ function  openNav() {
     document.getElementById("main").style.visibility ="visible";
   }
 
-  function toggle(theform) { 
-    document.getElementById("form1").style.display = "none"; 
-    document.getElementById("form2").style.display = "none"; 
-    document.getElementById(theform).style.display = "block"; 
-} 
-  
-     
+  if (typeof jQuery == 'undefined') {
+
+    alert('JQuery is not defined');
+  }
+  $(document).ready(function() {
+    $(function() {
+      $("input:radio").click(function(){
+        $("div1").hide();
+        var div = "#blk-"+$(this).val();
+        $(div).show();
+    });
+   });
+});

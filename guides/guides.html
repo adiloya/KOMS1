@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="guides.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="guides.js"></script>
+    
+
     <title>מדריכים</title>
 </head>
 <body>
@@ -36,22 +39,18 @@
           </div>
     </aside>
            
-        <main>
-            <form name="form1" id='form1' action="..." method="post" >     
-                <input />
-                <input type ="submit"/>
-            </form>
-            
-            <form name="form2" action="..." method="post" style="display: none;">     
-                <input />
-                <input type ="submit"/>
-            </form>
-            
-            
-            <input type="radio" name="myradio" value="1" onclick="toggle('form1')";<input/>one
-            <input type="radio" name="myradio" value="2" onclick="toggle('form2')";<input/>two
-
-        </main>
+     <main>
+        <label><input id="rdb1" type="radio" name="toggler" value="1" />רישום משתמש חדש</label>
+        <label><input id="rdb2" type="radio" name="toggler" value="2" />עריכת משתמש חדש</label>
+        
+        <div1 id="blk-1"  style="display:none">
+            <p>money</p>
+        </div1>
+        <div1 id="blk-2"  style="display:none">
+            <p>interest</p>
+        </div1>
+        
+     </main>
                
     <footer>
         <div class="footer">

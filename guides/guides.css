@@ -35,6 +35,7 @@ main {
     margin-top: 5%;
     overflow: auto;
     height: 80%;
+    text-align: center;
     
 }
 
@@ -177,3 +178,5 @@ color:	#d3d7f0;
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+
+ 
