@@ -181,22 +181,38 @@ color:	#d3d7f0;
   }
 
 .one  {
-    border-style: solid;
+    padding-top: 10px;
+    padding-right: 20px;
+    margin-top: 34px;
+    border-style: none;
     margin-right: 30px;
     display:flex;
     flex-direction: column;
     text-align: right;
     width: 30%;
+    float: right;
+    background-color:lavender ;
+    height: 300px;
+        border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    position: relative;
 }
 .two  {
-    border-style: solid;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-style: none;
     margin-right: 30px;
     display:flex;
     flex-direction: column;
     text-align: right;
     position: relative;
     width: 30%;
-    float:auto;
+    background-color: lavender;
+    height: 300px;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
 }
 
 
