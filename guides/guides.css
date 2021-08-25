@@ -30,7 +30,7 @@ header h2 {
 }
 
 main {
-    border-style: solid;
+    border-style: none;
     float: left;
     width: 75%;
     margin-top: 5%;
@@ -84,20 +84,7 @@ aside{
 
   }
 
-footer {
-    clear: left;
-    width: 100%;
-    background-color: #461473;
-    text-align: center;
-    color:#d7dcf2;
 
-    padding: 4px 0;
-}
-
-footer p {
-color:	#d3d7f0;
-
-}
 
 
 .innertube {
@@ -183,7 +170,7 @@ color:	#d3d7f0;
 .one  {
     padding-top: 10px;
     padding-right: 20px;
-    margin-top: 34px;
+    margin-top: 10px;
     border-style: none;
     margin-right: 30px;
     display:flex;
@@ -193,7 +180,7 @@ color:	#d3d7f0;
     float: right;
     background-color:lavender ;
     height: 300px;
-        border-right: solid;
+    border-right: solid;
     border-top: solid;
     border-bottom: solid;
     position: relative;

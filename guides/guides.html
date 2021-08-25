@@ -40,8 +40,8 @@
     </aside>
            
      <main>
-        <input id="rdb1" type="radio" name="toggler" value="1" />רישום משתמש חדש
-        <input id="rdb2" type="radio" name="toggler" value="2" />עריכת משתמש חדש
+        <input id="rdb1" type="radio" name="toggler" value="1" />רישום משתמש חדש </input>
+        <input id="rdb2" type="radio" name="toggler" value="2" />עריכת משתמש חדש</input><br>
         
         <div1 id="blk-1"  style="display:none">
             <section class="one">
@@ -50,12 +50,14 @@
                     <p><label> שם משפחה: </label> <input type="text" placeholder="שם משפחה"></p><br>
                     <p><label> ת"ז: </label> <input type="text" placeholder="תז " maxlength="9"></p><br>
                     <p><label> כתובת: </label> <input type="text" placeholder="כתובת "></p><br>
-                    <p><label>טלפון נייד: </label> <input type="tel" placeholder="טלפון נייד"></p><br>
-                    <p><label> אימייל: </label> <input type="email" placeholder="אימייל"></p>
+                    <button type="submit" style="font-size: small;" >שלח טופס</button>
+                    
                 </form>
              </section>
              <section class="two" >
                 <form method="post">
+                    <p><label>טלפון נייד: </label> <input type="tel" placeholder="טלפון נייד"></p><br>
+                    <p><label> אימייל: </label> <input type="email" placeholder="אימייל"></p><br>
                     <p> <label>  מרכז:</label>
 			        <select name="center" size="1">
 			        <option value="Beer-Sheva">באר שבע</option>
@@ -67,7 +69,9 @@
                     <option value="language">לשון</option>
                     <option value="English" selected>אנגלית</option>
                     <option value="Math">מתמטיקה</option>
-                    <option value="Literature">ספרות</option></select></p><br>
+                    <option value="Literature">ספרות</option></select></p><br>  
+                    <button type="button"style="font-size: small;" ><a href="http://127.0.0.1:5500/VScode/page1/page%201.html">חזור</a></button>
+                    
                 </form>
              </section>
             
@@ -77,10 +81,6 @@
         
      </main>
                
-    <footer>
-        <div class="footer">
-            <p>test</p>
-        </div>
-    </footer>
+    
 </body>
 </html>
