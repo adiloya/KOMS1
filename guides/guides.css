@@ -4,6 +4,7 @@ body {
     background-color: #F7F5E1;
     line-height: 1.5em;
     direction: rtl;
+    box-sizing: border-box;
 
 }
 
@@ -179,4 +180,28 @@ color:	#d3d7f0;
     .sidebar a {font-size: 18px;}
   }
 
+.one  {
+    border-style: solid;
+    margin-right: 30px;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    width: 30%;
+}
+.two  {
+    border-style: solid;
+    margin-right: 30px;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+    width: 30%;
+    float:auto;
+}
+
+
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
  
