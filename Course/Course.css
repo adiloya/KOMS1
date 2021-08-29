@@ -1,0 +1,211 @@
+		
+body {
+    font-family: 'Arimo', sans-serif;
+    background-color: #F7F5E1;
+    line-height: 1.5em;
+    direction: rtl;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color:#461473;
+    color: #4BE1BE ;				
+    height: 100px;
+    text-align: center;
+    width: 50%;
+    margin-right: 25%;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 15px;
+}
+header h2 {
+    margin: 0;
+    padding-top: 40px;
+    text-align: left;
+    color: #461473;
+    margin-left: 28%;
+}
+
+main {
+    border-style: none;
+    float: left;
+    width: 75%;
+    margin-top: 5%;
+    overflow: auto;
+    height: 80%;
+    text-align: center;
+    
+}
+
+/*section1 {
+    
+    width: 50%;
+    border-style: solid;
+    float: left;
+    text-align: center;
+}
+section2 {
+    width: 49%;
+    border-style: solid;
+    float: right;
+    text-align: center;
+}*/
+aside{
+    margin-top: 5%;
+    width: 20%;
+    float:right;
+    overflow: auto;
+    
+    }
+ button{
+     font-family: 'Arimo', sans-serif;
+     font-size: 20px;
+     text-align:center;
+     padding: 10px 30px;
+     background-color:#461473;
+     color: white;
+     margin-top: 2.5%;
+     border-radius: 10px;
+     margin-right: 0%;
+     width: 70%;
+     height: 10%;
+     
+ } 
+ a:link {
+    color: white;
+    text-decoration: none;
+   
+  }  
+  a:visited {
+    color: white;
+
+  }
+
+
+
+
+.innertube {
+    margin-top: 0%;
+    padding-top: 25px;
+    font-size: 50px;
+}
+
+
+
+.main-img
+{
+    height: 550px;
+    padding-left:25%;
+}
+
+/* The sidebar menu */
+.sidebar {
+    border-radius: 10px;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: relative; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #461473; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /*transition: 0.2s; /* 0.5 second transition effect to slide in the sidebar */
+    float:right;
+    
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 190px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #461473;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-right .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+.one  {
+    padding-top: 10px;
+    padding-right: 20px;
+    margin-top: 10px;
+    border-style: none;
+    margin-right: 30px;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    width: 30%;
+    float: right;
+    background-color:lavender ;
+    height: 300px;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    position: relative;
+
+}
+.two  {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-style: none;
+    margin-right: 30px;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+    width: 30%;
+    background-color: lavender;
+    height: 300px;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+ 

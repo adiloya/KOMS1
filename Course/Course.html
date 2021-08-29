@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Course.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="Course.js"></script> 
+    
+
+    <title>קורסים</title>
+</head>
+<body>
+    <header>
+        <div class="innertube">
+            <h1> World Ort</h1>
+        </div>
+            <h2>Kadima Mada</h2>
+        
+    </header>
+
+    <aside> 
+        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="http://127.0.0.1:5500/files/files.html#" > ניהול תכנים</a>
+            <a href="#"> <font color=#4BE1BE>ניהול קורסים ושיעורים</font></a>
+            <a href="http://127.0.0.1:5500/guides/guides.html">ניהול מדריכים</a>
+            <a href="#">ניהול לקוחות</a>
+            <a href="#">דו"חות</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; תפריט </button>
+          </div>
+    </aside>
+           
+     <main>
+        <input id="rdb1" type="radio" name="toggler" value="1" />ניהול קורסים </input>
+        <input id="rdb2" type="radio" name="toggler" value="2" />ניהול שיעורים</input><br>
+        
+        <div1 id="blk-1"  style="display:none">
+            <input id="rdb11" type="radio" name="toggler" value="1" />יצירת קורס חדש </input>
+            <input id="rdb12" type="radio" name="toggler" value="2" />רישום תלמידים לקורס</input><br>
+            <section class="one">
+                <form method="post">
+                    <p><label> שם הקורס: </label> <input type="text" placeholder="שם הקורס"></p><br>
+                    <p><label>  תחום התמחות:</label>
+                        <select name="prof" size="1">
+                        <option value="language">לשון</option>
+                        <option value="English" >אנגלית</option>
+                        <option value="Math">מתמטיקה</option>
+                        <option value="Literature">ספרות</option></select></p><br>                     
+                        <p><label> תאריך התחלה: </label> <input type="date"  id="start" name="trip-start"
+                            min="2021-01-01" max="2021-12-31"></p><br>
+                    <p><label> תאריך סיום: </label> <input type="date"  id="start" name="trip-start"
+                        min="2021-01-01" max="2021-12-31"></p><br>
+                    <button type="submit" style="font-size: small;" >אישור</button>
+                    
+                </form>
+             </section>
+             <section class="two" >
+                <form method="post">
+                    <p><label>  יום בשבוע:</label>
+                        <select name="prof" size="1">
+                            <option value="sunday"> ראשון </option>
+                        <option value="monday">שני</option>
+                        <option value="tuesday" >שלישי</option>
+                        <option value="wednsday">רביעי</option>
+                        <option value="thursday">חמישי</option></select></p><br>
+
+                    <p><label> שעת התחלה: </label> <input type="time" id="appt" name="appt"
+                        min="09:00" max="18:00" required></p><br>
+                    <p><label> שעת סיום: </label><input type="time" id="appt" name="appt"
+                        min="09:00" max="18:00" required></p><br>
+                    <p> <label>  מרכז:</label>
+			        <select name="center" size="1">
+			        <option value="Beer-Sheva">באר שבע</option>
+			        <option value="Jerusalem" >ירושלים</option>
+			        <option value="Tel-Aviv">תל אביב</option>
+			        <option value="Nes-Tziona">נס ציונה</option></select></p><br>
+                   
+                    <button type="button"style="font-size: small;" ><a href="http://127.0.0.1:5500/VScode/page1/page%201.html">חזור</a></button>
+                    
+                </form>
+             </section>
+            
+            
+        <div1 id="blk-2"  style="display:none">
+            <p>interest</p>
+        </div1>
+        
+     </main>
+               
+    
+</body>
+</html>
