@@ -9,24 +9,24 @@ body {
 }
 
 header {
-    background-color:#461473;
-    color: #4BE1BE ;				
-    height: 100px;
-    text-align: center;
-    width: 50%;
-    margin-right: 25%;
+  background-color:#461473;
+  color: #4BE1BE ;				
+  height: 100px;
+  text-align: center;
+  width: 100%;
+  
 }
 
 header h1 {
-    margin: 0;
-    padding-top: 15px;
+  margin: 0;
+  padding-top: 15px;
 }
 header h2 {
-    margin: 0;
-    padding-top: 40px;
-    text-align: left;
-    color: #461473;
-    margin-left: 28%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: left;
+  color: #461473;
+  margin-left: 40%;
 }
 
 main {
@@ -54,7 +54,7 @@ section2 {
     text-align: center;
 }*/
 aside{
-    margin-top: 5%;
+    margin-top: 1%;
     width: 20%;
     float:right;
     overflow: auto;
@@ -152,7 +152,7 @@ aside{
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: #6a329b;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -208,4 +208,6 @@ form  { display: table;      }
 p     { display: table-row;  }
 label { display: table-cell; }
 input { display: table-cell; }
- 
+.pagebar{
+  float:right ;
+}

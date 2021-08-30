@@ -12,8 +12,8 @@ header {
     color: #4BE1BE ;				
     height: 100px;
     text-align: center;
-    width: 50%;
-    margin-right: 25%;
+    width: 100%;
+    
 }
 
 header h1 {
@@ -25,7 +25,7 @@ header h2 {
     padding-top: 40px;
     text-align: left;
     color: #461473;
-    margin-left: 28%;
+    margin-left: 40%;
 }
 
 main {
@@ -38,7 +38,7 @@ main {
     
 }
 aside{
-    margin-top: 5%;
+    margin-top: 1%;
     width: 20%;
     float:right;
     overflow: auto;
@@ -74,8 +74,8 @@ footer {
     background-color: #461473;
     text-align: center;
     color:#d7dcf2;
-
-    padding: 4px 0;
+    padding: 4px ;
+    
 }
 
 footer p {
@@ -94,8 +94,9 @@ color:	#d3d7f0;
 
 .main-img
 {
-    height: 550px;
-    padding-left:25%;
+    height: 10%;
+    padding-left:15%;
+    position: relative;
 }
 
 /* The sidebar menu */
@@ -149,7 +150,7 @@ color:	#d3d7f0;
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: #6a329b;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
