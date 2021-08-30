@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   echo "Connection successful";
 }
 
-if(isset($_POST(['submit'])){
+if(isset($_POST(['Submit'])){
 $firstName = $_POST['fname'];
 $lastName = $_POST['lname'];
 $id = $_POST['id'];
