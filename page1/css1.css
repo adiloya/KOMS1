@@ -1,0 +1,113 @@
+		
+body {
+    font-family: 'Arimo', sans-serif;
+    background-color: #F7F5E1;
+    line-height: 1.5em;
+    direction: rtl;
+
+}
+
+header {
+    background-color:#461473;
+    color: 4BE1BE ;				
+    height: 100px;
+    text-align: center;
+    width: 50%;
+    margin-right: 25%;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 15px;
+}
+header h2 {
+    margin: 0;
+    padding-top: 40px;
+    text-align: left;
+    color: #461473;
+    margin-left: 28%;
+}
+
+main {
+
+    float: left;
+    width: 75%;
+    margin-top: 5%;
+    overflow: auto;
+    height: 80%;
+    
+}
+aside{
+    margin-top: 5%;
+    width: 20%;
+    float:right;
+    overflow: auto;
+    }
+ button{
+     font-family: 'Arimo', sans-serif;
+     font-size: 20px;
+     text-align:center;
+     padding: 10px 30px;
+     background-color:#461473;
+     color: white;
+     margin-top: 2.5%;
+     border-radius: 10px;
+     margin-right: 25%;
+     width: 70%;
+     height: 10%;
+     
+ } 
+ a:link {
+    color: white;
+    text-decoration: none;
+   
+  }  
+  a:visited {
+    color: white;
+
+  }
+
+.active {
+    background-color: #4CAF50;
+    }
+
+footer {
+    clear: left;
+    width: 100%;
+    background-color: #461473;
+    text-align: center;
+    color:#d7dcf2;
+
+    padding: 4px 0;
+}
+
+footer p {
+color:	#d3d7f0;
+
+}
+
+
+.innertube {
+    margin-top: 0%;
+    padding-top: 25px;
+    font-size: 50px;
+}
+
+p {
+    color: #555;
+}
+
+
+.logo {
+
+    height: 300px;
+    margin-top: 10px;
+
+}
+
+.main-img
+{
+    height: 550px;
+    padding-left:25%;
+}
+
