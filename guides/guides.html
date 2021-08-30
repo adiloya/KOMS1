@@ -48,17 +48,17 @@
         <input id="rdb2" type="radio" name="toggler" value="2" />עריכת מדריך קיים</input><br>
         <div1 id="blk-1"  style="display:none" class="box">
             <section class="one">
-                <form method="post">
+                <form method="post" action="guides.php">
                     <p><label> שם פרטי: </label> <input type="text" placeholder="שם פרטי" name="fname"></p><br>
                     <p><label> שם משפחה: </label> <input type="text" placeholder="שם משפחה" name="lname"></p><br>
                     <p><label> ת"ז: </label> <input type="text" placeholder="תז " maxlength="9" name="id"></p><br>
                     <p><label> כתובת: </label> <input type="text" placeholder="כתובת " name="address"></p><br>
-                    <button type="submit" style="font-size: small;" >שלח טופס</button>
-                    
+                    <button type="submit" name="Submit" style="font-size: small;" >שלח טופס</button>
+                     
                 </form>
              </section>
              <section class="two" >
-                <form method="post">
+                <form method="post" action="guides.php">
                     <p><label>טלפון נייד: </label> <input type="tel" placeholder="טלפון נייד" name="phone"></p><br>
                     <p><label> אימייל: </label> <input type="email" placeholder="אימייל" name="email"></p><br>
                     <p> <label>  מרכז:</label>
