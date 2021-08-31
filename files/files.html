@@ -10,26 +10,26 @@
     <link rel="stylesheet" href="files.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="files.js"></script> 
-    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <title>תכנים</title>
 </head>
 <body>
     <header>
-        <div class="innertube">
-            <h1> World Ort</h1>
-        </div>
-            <h2>Kadima Mada</h2>
-        
+        <img  src="../home/img/ORT-Israel-logo-turquoise-white.webp">
+        <h1 >ניהול תכנים</h1>
     </header>
 
     <aside> 
         
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#" > <font color=#4BE1BE> ניהול תכנים</font></a>
-            <a href="http://127.0.0.1:5500/Course/Course.html#">ניהול קורסים ושיעורים</a>
-            <a href="http://127.0.0.1:5500/guides/guides.html">ניהול מדריכים</a>
+            <a href="../home/home.html"> <i class="fa fa-fw fa-home"></i>  דף הבית</a>
+
+            <a href="../files/files.html#" > <font color=#4BE1BE> <i class="fa fa-fw  fa-arrow-circle-left" aria-hidden="true"></i> ניהול תכנים</font></a>
+            <a href="../Course/Course.html#">ניהול קורסים ושיעורים</a>
+            <a href="../guides/guides.html">ניהול מדריכים</a>
             <a href="#">ניהול לקוחות</a>
             <a href="#">דו"חות</a>
           </div>
@@ -40,8 +40,11 @@
     </aside>
            
      <main>
-        <input id="rdb1" type="radio" name="toggler" value="1" />יצירת תיקייה חדשה </input>
-        <input id="rdb2" type="radio" name="toggler" value="2" />כניסה לתיקייה קיימת</input><br>
+        <div class="pagebar">
+            <input id="rdb1" type="radio" name="toggler" value="1" />יצירת תיקייה חדשה </input>
+            <input id="rdb2" type="radio" name="toggler" value="2" />כניסה לתיקייה קיימת</input><br>
+        </div>
+
         
         <div1 id="blk-1"  style="display:none">
             <section class="one">
@@ -54,7 +57,7 @@
                         <input type="submit">
                       </form>
                     </p><br>
-                    <button type="submit" style="font-size: small;" >אישור</button>
+                    <button type="submit" id="upload" >העלאה</button>
  
                 </form>
              </section>
