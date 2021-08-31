@@ -11,10 +11,10 @@ if ($conn->connect_error) {
   echo "Connection successful";
 }
 
-if(isset($_POST(['Submit'])){
-$firstName = $_POST['fname'];
-$lastName = $_POST['lname'];
-$id = $_POST['id'];
+if(isset($_POST['Submit'])){
+$teacher_firstname = $_POST['teacher_firstname'];
+$teacher_lastname = $_POST['teacher_lastname'];
+$teacher_id = $_POST['teacher_id'];
 $email = $_POST['email'];
 $address = $_POST['address'];
 $center = $_POST['center'];
