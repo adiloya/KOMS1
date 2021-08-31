@@ -15,7 +15,7 @@ header {
     width: 100%;
     
 }
-
+/*
 header h1 {
     margin: 0;
     padding-top: 15px;
@@ -27,7 +27,7 @@ header h2 {
     color: #461473;
     margin-left: 40%;
 }
-
+*/
 main {
 
     float: left;
@@ -90,7 +90,10 @@ color:	#d3d7f0;
     font-size: 50px;
 }
 
-
+img{
+  height: 80%;
+   margin-top:1% ;
+}
 
 .main-img
 {

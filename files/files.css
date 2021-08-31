@@ -16,10 +16,13 @@ header {
   width: 100%;
   
 }
-
+img{
+  float:left; height:50%; margin-left: 1%; margin-top:1.5%
+}
 header h1 {
-  margin: 0;
-  padding-top: 15px;
+  margin-right: 1%;
+  float:right;
+  font-size:300%;
 }
 header h2 {
   margin: 0;
@@ -60,7 +63,8 @@ aside{
     overflow: auto;
     
     }
- button{
+
+    button{
      font-family: 'Arimo', sans-serif;
      font-size: 20px;
      text-align:center;
@@ -203,4 +207,17 @@ div1{
 padding-top: 3%;
   float:inherit;
 width: 100%;
+}
+
+#upload{
+  font-size: small;
+  text-align:center;
+  width: 50%;
+  height: 10%;
+  margin-top: 0%;
+  padding: 1% 2%;
+  border-radius: 10px;
+  margin-right: 20%;
+    
+    
 }

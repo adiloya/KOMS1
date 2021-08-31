@@ -9,16 +9,33 @@ function  openNav() {
     document.getElementById("main").style.visibility ="visible";
   }
 
-  if (typeof jQuery == 'undefined') {
 
-    alert('JQuery is not defined');
-  }
-  $(document).ready(function() {
-    $(function() {
-      $("input:radio").click(function(){
-        $("div1").hide();
-        var div = "#blk-"+$(this).val();
-        $(div).show();
-    });
-   });
+
+if (typeof jQuery == 'undefined') {
+
+  alert('JQuery is not defined');
+}
+$(document).ready(function() {
+  $(function() {
+    $("input:radio").click(function(){
+      $("div1").hide();
+      var div = "#blk-"+$(this).val();
+      $(div).show();
+  });
+ });
+});
+
+
+if (typeof jQuery == 'undefined') {
+
+  alert('JQuery is not defined');
+}
+$(document).ready(function() {
+  $(function() {
+    $("input:radio").click(function(){
+      $("div2").hide();
+      var div = "#part-"+$(this).val();
+      $(div).show();
+  });
+ });
 });

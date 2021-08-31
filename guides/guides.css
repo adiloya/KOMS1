@@ -15,11 +15,13 @@ header {
   text-align: center;
   width: 100%;
   
+}img{
+  float:left; height:50%; margin-left: 1%; margin-top:1.5%
 }
-
 header h1 {
-  margin: 0;
-  padding-top: 15px;
+  margin-right: 1%;
+  float:right;
+  font-size:300%;
 }
 header h2 {
   margin: 0;
