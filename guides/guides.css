@@ -186,7 +186,7 @@ aside{
   position: relative;
 
 }
-.two  {
+/*.two  {
   padding-top: 10px;
   margin-top: 10px;
   border-style: none;
@@ -201,7 +201,7 @@ aside{
   border-left: solid;
   border-top: solid;
   border-bottom: solid;
-}
+}*/
 
 
 form  { display: table;      }
