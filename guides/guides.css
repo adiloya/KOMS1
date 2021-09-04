@@ -178,13 +178,11 @@ aside{
   display:flex;
   flex-direction: column;
   text-align: right;
-  width: 30%;
+  width: 60%;
   float: right;
   background-color:lavender ;
   height: 300px;
-  border-right: solid;
-  border-top: solid;
-  border-bottom: solid;
+  border-style: solid;
   position: relative;
 
 }
