@@ -1,0 +1,105 @@
+<<<<<<< Updated upstream
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="guides.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="guides.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>מדריכים</title>
+</head>
+<body>
+    <header>
+        <img  src="../home/img/ORT-Israel-logo-turquoise-white.webp">
+        <h1 >ניהול מדריכים</h1>
+
+        
+    </header>
+
+    <aside> 
+        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../home/home.html"> <i class="fa fa-fw fa-home"></i>  דף הבית</a>
+            
+            
+            <a href="../files/files.html#">ניהול תכנים</a>
+            <a href="../Course/Course.html#">ניהול קורסים ושיעורים</a>
+            <a href="../guides/guides.html"><font color=#4BE1BE><i class="fa fa-fw  fa-arrow-circle-left" aria-hidden="true"></i>  ניהול מדריכים</font></a>
+            <a href="#">ניהול לקוחות</a>
+            <a href="#">דו"חות</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; תפריט </button>
+          </div>
+    </aside>
+           
+     <main>
+        <input id="rdb1" type="radio" name="toggler" value="1" />רישום מדריך חדש </input>
+        <input id="rdb2" type="radio" name="toggler" value="2" />עריכת מדריך קיים</input><br>
+        <div1 id="blk-1"  style="display:none" class="box">
+            <section class="one">
+                <form method="post" action="http://localhost/test/guides.php">
+                    <p><label> שם פרטי: </label> <input type="text" placeholder="שם פרטי" name="teacher_firstname">
+                        <label>טלפון נייד: </label> <input type="tel" placeholder="טלפון נייד" name="phone" >
+                        <label> שעות עבודה רצויות: </label> <input type="checkbox" value="1" name="ava" style="display: none;">&nbsp;
+                        <label> ראשון בוקר: </label> <input type="checkbox" value="1" name="ava"></p>
+                    <p><label> שם משפחה: </label> <input type="text" placeholder="שם משפחה" name="teacher_lastname">
+                        <label> אימייל: </label> <input type="text" placeholder="אימייל" name="email">
+                        <label> ראשון צהריים: </label> <input type="checkbox" value="1" name="ava">
+                        <label> ראשון ערב: </label> <input type="checkbox" value="1" name="ava"></p>
+                    <p><label> ת"ז: </label> <input type="text" placeholder="תז " maxlength="9" name="teacher_id">
+                    <label> כתובת: </label> <input type="text" placeholder="כתובת " name="address">
+                    <label> שני בוקר: </label> <input type="checkbox" value="1" name="ava">
+                    <label>שני צהריים: </label> <input type="checkbox" value="1" name="ava"> </p>
+                    <p> <lable></lable> <label></label><label></label><label></label><label> שני ערב: </label> <input type="checkbox" value="1" name="ava">
+                        <label> שלישי בוקר: </label> <input type="checkbox" value="1" name="ava"></p> 
+                        
+                        
+                    <p> <label>  מרכז:</label>
+			        <select name="center" size="1">
+			        <option value="Beer-Sheva">באר שבע</option>
+			        <option value="Jerusalem" selected>ירושלים</option>
+			        <option value="Tel-Aviv">תל אביב</option>
+			        <option value="Nes-Tziona">נס ציונה</option></select>
+                    <label>  תחום התמחות:</label>
+                    <select name="prof" size="1">
+                    <option value="language">לשון</option>
+                    <option value="English" selected>אנגלית</option>
+                    <option value="Math">מתמטיקה</option>
+                    <option value="Literature">ספרות</option></select><br>  
+                    <label> שלישי צהריים: </label> <input type="checkbox" value="1" name="ava">
+                    <label> שלישי ערב: </label> <input type="checkbox" value="1" name="ava"></p>
+                    <p> <lable></lable> <label></label><label></label><label></label><label> רביעי בוקר: </label> <input type="checkbox" value="1" name="ava">
+                        <label> רביעי צהריים: </label> <input type="checkbox" value="1" name="ava"></p> 
+                        <p> <lable></lable> <label></label><label></label><label></label><label> רביעי ערב: </label> <input type="checkbox" value="1" name="ava">
+                            <label> חמישי בוקר: </label> <input type="checkbox" value="1" name="ava"></p>
+                    <P><label><button type="button"style="font-size: small;" ><a href="http://127.0.0.1:5500/VScode/page1/page%201.html"><label>חזור</label></a></button></label>
+                    <label><button type="submit" name="Submit" style="font-size: small;" ><label>שלח טופס</label></button></label>
+                    <lable></lable> <label></label><label> חמישי צהריים: </label> <input type="checkbox" value="1" name="ava">
+                        <label> חמישי ערב: </label> <input type="checkbox" value="1" name="ava"></P>
+                    
+                </form>
+
+             </section>
+            </div1>
+
+        <div1 id="blk-2"  style="display:none">
+            <p>interest</p>
+        </div1>
+     </main>
+               
+    
+</body>
+</html>
+>>>>>>> Stashed changes
