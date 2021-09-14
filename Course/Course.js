@@ -25,17 +25,3 @@ $(document).ready(function() {
  });
 });
 
-
-if (typeof jQuery == 'undefined') {
-
-  alert('JQuery is not defined');
-}
-$(document).ready(function() {
-  $(function() {
-    $("input:radio").click(function(){
-      $("div2").hide();
-      var div = "#part-"+$(this).val();
-      $(div).show();
-  });
- });
-});
