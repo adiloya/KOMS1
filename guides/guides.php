@@ -1,8 +1,9 @@
 <?php
+
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "koms";
+$username = "shakedha";
+$password = "AEHPqAazeLLZZ";
+$dbname = "shakedha_komsdb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -47,6 +48,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 
-
-$conn->close();
+$conn->close(); 
 ?>
