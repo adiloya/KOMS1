@@ -43,8 +43,9 @@
            
      <main>
         <div class="pagebar">
-            <input id="rdb1" type="radio" name="toggler" value="1" />ניהול קורסים </input>
-            <input id="rdb2" type="radio" name="toggler" value="2" />ניהול שיעורים</input><br>
+            <input id="rdb1" type="radio" name="toggler" value="1" >הקמת קורס 
+            <input id="rdb2" type="radio" name="toggler" value="2" >ניהול קורסים
+            <br>
 
             
         </div>
@@ -53,42 +54,41 @@
         <div1 id="blk-1"  style="display:none">
             
             <section class="one">
-                <form method="post">
-                    <p><label> שם הקורס: </label> <input type="text" placeholder="שם הקורס"></p><br>
+                <form method="post" action="Course.php">
+                    <p><label> שם הקורס: </label> <input type="text" name="course_name" placeholder="שם הקורס"></p><br>
                     <p><label>  תחום התמחות:</label>
-                        <select name="prof" size="1">
+                        <select name="course_domain" size="1">
                         <option value="language">לשון</option>
                         <option value="English" >אנגלית</option>
                         <option value="Math">מתמטיקה</option>
                         <option value="Literature">ספרות</option></select></p><br>                     
                     
-                    <p><label> תאריך התחלה: </label> <input type="date"  id="start" name="trip-start"
+                    <p><label> תאריך התחלה: </label> <input type="date"  id="start" name="course_start_date"
                             min="2021-01-01" max="2021-12-31"></p><br>
-                    <p><label> תאריך סיום: </label> <input type="date"  id="start" name="trip-start"
+                    <p><label> תאריך סיום: </label> <input type="date"  id="end" name="course_end_date"
                         min="2021-01-01" max="2021-12-31"></p><br>
                    
-                        <p> <label>  מרכז:</label>
-                                <select name="center" size="1">
-                                <option value="Beer-Sheva">באר שבע</option>
-                                <option value="Jerusalem" >ירושלים</option>
-                                <option value="Tel-Aviv">תל אביב</option>
-                                <option value="Nes-Tziona">נס ציונה</option>
-                            </select></p><br>
+                      
                         <p><label>  יום בשבוע:</label>
-                                <select name="prof" size="1">
-                                <option value="sunday"> ראשון </option>
-                                <option value="monday">שני</option>
-                                <option value="tuesday" >שלישי</option>
-                                <option value="wednsday">רביעי</option>
-                                <option value="thursday">חמישי</option>
+                                <select name="course_day" size="1">
+                                <option value="1">ראשון</option>
+                                <option value="2">שני</option>
+                                <option value="3" >שלישי</option>
+                                <option value="4">רביעי</option>
+                                <option value="5">חמישי</option>
                             </select></p><br>
                         <p> <label>  שעת הקורס:</label>
-                                <select name="center" size="1">
-                                <option value="morning">09:00-11:00</option>
-                                <option value="noon" >14:00-16:00</option>
-                                <option value="evening">18:00-20:00</option>
+                                <select name="course_time" size="1">
+                                <option value="1">09:00-11:00</option>
+                                <option value="2" >14:00-16:00</option>
+                                <option value="3">18:00-20:00</option>
                             </select></p><br>
-                    
+                    <p> <label>  בחירת מדריך :</label>
+                                <select name="center" size="1">
+                                <option value="morning">לוגיקה</option>
+                                <option value="noon" >מדריך</option>
+                                <option value="evening">פנוי</option>
+                            </select></p><br>
                             
                            <p><label for="students">  הוספת תלמידים:</label>
                             <select name="students" id= "students" multiple  style="width: 75%;">
@@ -116,7 +116,11 @@
             
             
         <div1 id="blk-2"  style="display:none">
-            <p>interest</p>
+
+          <P>try try@@@@@@@@@</P>
+            
+            
+
         </div1>
         
      </main>
