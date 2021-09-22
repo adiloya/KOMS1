@@ -196,22 +196,7 @@ aside{
     position: relative;
 
 }
-/*.two  {
-    padding-top: 10px;
-    margin-top: 10px;
-    border-style: none;
-    margin-right: 30px;
-    display:flex;
-    flex-direction: column;
-    text-align: right;
-    position: relative;
-    width: 30%;
-    background-color: lavender;
-    height: 300px;
-    border-left: solid;
-    border-top: solid;
-    border-bottom: solid;
-}*/
+
 
 
 form  { display: table;      }
@@ -220,4 +205,28 @@ label { display: table-cell; }
 input { display: table-cell; }
 .pagebar{
   float:right ;
+}
+
+
+table {
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: collapse;
+  border: 3px solid #461473;
+}
+thead{
+    background:#461473;
+    color:white;
+}
+ th {
+  width: 30%;
+}
+
+
+th, td {
+  padding: 20px;
+}
+
+tr:hover{
+    color:#4BE1BE ;
 }

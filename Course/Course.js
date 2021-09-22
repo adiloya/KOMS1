@@ -11,17 +11,18 @@ function  openNav() {
 
 
 
-if (typeof jQuery == 'undefined') {
 
-  alert('JQuery is not defined');
-}
-$(document).ready(function() {
-  $(function() {
-    $("input:radio").click(function(){
-      $("div1").hide();
-      var div = "#blk-"+$(this).val();
-      $(div).show();
-  });
- });
+
+ if (typeof jQuery == 'undefined') {
+
+    alert('JQuery is not defined');
+  }
+  $(document).ready(function() {
+    $(function() {
+      $("input:radio").click(function(){
+        $("div1").hide();
+        var div = "#blk-"+$(this).val();
+        $(div).show();
+    });
+   });
 });
-
