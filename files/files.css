@@ -190,11 +190,13 @@ width: 100%;
 
 th, td {
   padding: 15px;
-  text-align: right;
+  text-align: center;
   
 }
 
-tr:hover {background-color:#6a329b;}
+tr:hover {
+    color:#4BE1BE;
+}
 
 th {
   background-color:#461473;
