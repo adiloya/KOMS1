@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "shakedha";
-$password = "AEHPqAazeLLZZ";
-$dbname = "shakedha_komsdb";
+$username = "root";
+$password = "";
+$dbname = "koms";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
