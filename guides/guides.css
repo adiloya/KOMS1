@@ -211,4 +211,28 @@ input { display: table-cell; }
 
 .pagebar{
 float:right ;
+
+
+}
+table {
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: collapse;
+  border: 3px solid #461473;
+}
+thead{
+    background:#461473;
+    color:#4BE1BE;
+}
+ th {
+  width: 30%;
+}
+
+
+th, td {
+  padding: 20px;
+}
+
+tr:hover{
+    color:#4BE1BE ;
 }

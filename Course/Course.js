@@ -19,7 +19,7 @@ function  openNav() {
   }
   $(document).ready(function() {
     $(function() {
-      $("input:radio").click(function(){
+      $("input:radio").select(function(){
         $("div1").hide();
         var div = "#blk-"+$(this).val();
         $(div).show();

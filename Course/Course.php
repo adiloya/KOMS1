@@ -13,33 +13,6 @@ header('Content-Type: text/html; charset=utf-8');
 
 mysql_query("SET NAMES utf8");
 
-$message="";
-
-
- if (isset($_POST['Submit'])){
-    $query1="SELECT max(course_num) FROM `Courses` GROUP BY course_num";
-    $uid=2+(mysql_query($query1));
-    
-                           
-    $course_name = $_POST['course_name'];
-    $course_domain=$_POST['course_domain'];
-    $course_start_date=$_POST['course_start_date'];
-    $course_end_date=$_POST['course_end_date'];
-    $course_day=$_POST['course_day'];
-    $course_time=$_POST['course_time'];
- 
-
-    $query = "INSERT INTO `Courses` (course_name, course_domain,course_start_date,course_end_date,course_day,course_time,course_num)
-        VALUES ('$course_name', '$course_domain', '$course_start_date','$course_end_date','$course_day','$course_time','$uid')";
-                            
-                            mysql_query($query)
-                            or die(mysql_error());
-                            
-        $message="success";
-        
-                           
- }                      
-     
      
                             
   
@@ -95,56 +68,56 @@ $message="";
             <input id="rdb2" type="radio" name="toggler" value="2" >ניהול קורסים
             <br>
 
-            
+     
         </div>
        
         
         <div1 id="blk-1"  style="display:none" class=box>
             
             <section class="one">
-      <?php
-       $query2="SELECT max(course_num) FROM `Courses` GROUP BY course_num";
-  echo (mysql_query($query2));
     
-      ?>
-             <form action="" method="post" >
-                   <?php echo $message; ?>
-                   
-                    <p><label> שם הקורס: </label> <input type="text" name="course_name" placeholder="שם הקורס"></p><br>
+             <form action="updatecourse.php" method="POST" >
+
+                    <p><label> שם הקורס: </label> <input type="text" name="course_name" placeholder="שם הקורס" required></p><br>
                     <p><label>  תחום התמחות:</label>
-                        <select name="course_domain" size="1">
+                        <select name="course_domain" size="1" required>
                         <option >לשון</option>
                         <option  >אנגלית</option>
                         <option >מתמטיקה</option>
                         <option >ספרות</option></select></p><br>                     
                     
                     <p><label> תאריך התחלה: </label> <input type="date"  id="start" name="course_start_date"
-                            min="2021-01-01" max="2021-12-31"></p><br>
+                            min="2021-01-01" max="2021-12-31" required></p><br>
                     <p><label> תאריך סיום: </label> <input type="date"  id="end" name="course_end_date"
-                        min="2021-01-01" max="2021-12-31"></p><br>
+                        min="2021-01-01" max="2021-12-31" required></p><br>
                    
                       
                         <p><label>  יום בשבוע:</label>
-                                <select name="course_day" size="1">
-                                <option value="1">ראשון</option>
-                                <option value="2">שני</option>
-                                <option value="3" >שלישי</option>
-                                <option value="4">רביעי</option>
-                                <option value="5">חמישי</option>
+                                <select name="course_day" size="1" required>
+                                <option value="Sunday1">ראשון 09:00-11:00</option>
+                                <option value="Sunday2">ראשון 14:00-16:00</option>
+                                <option value="Sunday3">ראשון 18:00-20:00</option>
+                                <option value="Monday1">שני 09:00-11:00</option>
+                                <option value="Monday2">שני 14:00-16:00</option>
+                                <option value="Monday3">שני 18:00-20:00</option>
+                                <option value="Tuesday1">שלישי 09:00-11:00</option>
+                                <option value="Tuesday2">שלישי 14:00-16:00</option>
+                                <option value="Tuesday3">שלישי 18:00-20:00</option>
+                                <option value="Wednesday1">רביעי 09:00-11:00</option>
+                                <option value="Wednesday2">רביעי 14:00-16:00</option>
+                                <option value="Wednesday3">רביעי 18:00-20:00</option>
+                                <option value="Thursday1">חמישי 09:00-11:00</option>
+                                <option value="Thursday2">חמישי 14:00-16:00</option>
+                                <option value="Thursday3">חמישי 18:00-20:00</option>
+                                
                             </select></p><br>
-                        <p> <label>  שעת הקורס:</label>
-                                <select name="course_time" size="1">
-                                <option value="1">09:00-11:00</option>
-                                <option value="2" >14:00-16:00</option>
-                                <option value="3">18:00-20:00</option>
-                            </select></p><br>
+                       
                     
                             
                             <button type="submit" style="font-size: small; margin-top:30px;" >בחירת מדריך</button>
                             
                           
                         </form> 
-       
                     
                  
         </section>
@@ -159,6 +132,7 @@ $message="";
        <?php
     //execute the SQL query and return records
     $result = mysql_query("SELECT course_name, course_start_date,course_end_date,course_num FROM Courses");
+    
     ?>                
                 <table>
                 <thead>
